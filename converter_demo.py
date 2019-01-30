@@ -24,6 +24,13 @@ class RegexConverter(BaseConverter):
         # 将正则表达式的参数保存到对象属性中，flask回去使用这个属性来进行路由的正则匹配
         self.regex = regex
 
+    # 此处的value就是转换器取到的url中的值
+    def to_python(self, value):
+        return 123
+
+    def to_url(self, value):
+        return value
+
 
 # 2.将自定义的转换器添加到flask的应用中
 app.url_map.converters["re"] = RegexConverter
@@ -38,6 +45,19 @@ class MobileConverter(BaseConverter):
         super(MobileConverter, self).__init__(url_map)
         self.regex = r'1[34578]\d{9}'
 
+    # 此处的value就是转换器取到的url中的值
+    def to_python(self, value):
+        print("to_python被调用")
+        # return "123"
+        return value
+
+    # url_for用到的
+    def to_url(self, value):
+        # 使用url_for的时候被调用
+        print("to_url被调用")
+        # return "18984954312"
+        return value
+
 
 app.url_map.converters["mobile"] = MobileConverter
 
@@ -51,6 +71,14 @@ def send_sms(mobile):
 @app.route("/call/<re(r'1[34578]\d{9}'):tel>")
 def call_tel(tel):
     pass
+
+
+@app.route("/index")
+def index():
+    # 此处mobile的值先传递给to_url 再加进url中
+    url = url_for("send_sms", mobile="18984954311")
+    return redirect(url)
+
 
 if __name__ == '__main__':
     # 查看整个flask中的路由信息
