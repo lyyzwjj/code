@@ -1,0 +1,12 @@
+python2 字符串类型
+str     "utf-8" "gbk"  只是unicode子集
+unicode
+a = "中国"  str
+a = u"中国" unicode
+ASCII cannot decode \xxx\xx
+
+"中国"    %s      "sa"
+python 可能认为左右两种不一样  将左右两种都降成unicode编码方式   再取代
+
+
+python3
