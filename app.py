@@ -81,4 +81,4 @@ if __name__ == '__main__':
     # 5.直接设置app
     # app.debug = True
     # 6.启动项里面那选择
-    app.run(host="127.0.0.1", port=8080, debug=True)
+    app.run(host="192.168.199.195", port=8080, debug=True)
