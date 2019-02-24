@@ -1,0 +1,5 @@
+127.0.0.1 - - [22/Feb/2019:01:47:40 +0800] "GET / HTTP/1.1" 200 10 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36"
+127.0.0.1 - - [22/Feb/2019:01:47:40 +0800] "GET /favicon.ico HTTP/1.1" 404 233 "http://127.0.0.1:5000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36"
+127.0.0.1 - - [22/Feb/2019:02:04:12 +0800] "GET / HTTP/1.1" 200 10 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36"
+127.0.0.1 - - [22/Feb/2019:02:04:23 +0800] "GET / HTTP/1.1" 200 10 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36"
+127.0.0.1 - - [22/Feb/2019:02:04:23 +0800] "GET /favicon.ico HTTP/1.1" 404 233 "http://127.0.0.1:5001/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36"

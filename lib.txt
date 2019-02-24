@@ -1,0 +1,8 @@
+pip install flask==0.10.1
+pip install flask-script
+pip install flask-wtf
+pip install pymysql
+pip install flask-sqlalchemy
+pip install Flask-Mail
+pip install Flask-Migrate
+pip install gunicorn
