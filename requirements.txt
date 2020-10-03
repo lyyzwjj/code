@@ -1,0 +1,8 @@
+flask
+flask-script
+flask-wtf
+pymysql
+flask-sqlalchemy
+Flask-Mail
+Flask-Migrate
+gunicorn
